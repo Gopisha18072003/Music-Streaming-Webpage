@@ -29,7 +29,9 @@ body {
     overflow-y: auto;
     
 }
-
+.side:not(#logo) {
+  font-size: 1vw;
+}
 .main {
     flex: 85%;
     background-color: aquamarine;
@@ -116,6 +118,7 @@ body {
     margin-left: 48px;
     display: flex;
     justify-content: flex-start;
+    z-index: 10;
   }
   
   .manual-btn{
@@ -160,6 +163,7 @@ body {
     margin-left: 48px;
     display: flex;
     justify-content: flex-start;
+    z-index: 10;
   }
   
   .navigation-auto div{
@@ -228,6 +232,11 @@ input[type=text]:focus {
 .card-container {
     display: flex;
     flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.card-container::-webkit-scrollbar {
+    display:none;
 }
 .card {
     margin-right: 29px;
@@ -237,8 +246,11 @@ input[type=text]:focus {
     margin-right: 0px;
 }
 .card .img {
+
     width: 11.5vw;
     height: 11.5vw;
+    min-width: 80px;
+    min-height: 80px;
     background-color: #282c3c;
     border-radius: 28px;
 }
@@ -254,6 +266,7 @@ input[type=text]:focus {
 
 #logo {
     color: white;
+    font-size: 2.5vw;
     padding-top: 10px;
     padding-left: 20px;
 }
@@ -319,6 +332,7 @@ input[type=text]:focus {
     display: flex;
     flex-flow: column nowrap;
     height: 60vh;
+    border-radius: 4px;
 }
 
 .playlists {
@@ -390,22 +404,7 @@ input[type=text]:focus {
     padding-right: 20px;
     display: none;
   }
-  @media screen and (max-width: 600px) {
-    .main {width:100%; display:block;}
-    .main #hamburger{display: inline-block;}
-    .side {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      overflow-x: hidden;
-      transition: 0.5s;
-    }
-    .top #closebtn{display: inline-block;}
 
-  }
 
 .Top20 {
   background-color: coral;
@@ -543,4 +542,87 @@ footer>p{
     position: absolute;
     left: 7vw;
     top: 10px;
+}
+
+.hero1 {
+  background: rgb(104,36,180);
+  background: linear-gradient(188deg, rgba(104,36,180,1) 31%, rgba(180,52,164,1) 95%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-right: 40px;
+  width:100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.items {
+  flex: 60%;
+  position: relative;
+}
+.items img {
+  max-width: 580px;
+  max-height: 350px;
+  position: absolute;
+  z-index: 2;
+
+}
+.items .circle {
+  width: 560px;
+  height: 560px;
+  background-color: #c999da;
+  border-radius: 50%;
+  position: absolute;
+  left: -12;
+  top: -4px;
+  z-index: 1;
+}
+
+.hero-text{
+  flex: 40%;
+  z-index: 3;
+  padding-top: 20px;
+}
+.hero-text p {
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.hero-text .small {
+  color:#8876a8;
+  font-size: 1vw;
+  padding-bottom: 10px;
+}
+
+.hero-text .big {
+  color: white;
+  font-size: 3vw;
+  font-weight: bolder;
+}
+.hero-text .medium {
+  color:#302445;
+  font-size:1.5vw;
+}
+
+@media screen and (max-width: 950px) {
+  .main {width:100%; display:block;}
+  .main #hamburger{display: inline-block;}
+  .side {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .top #closebtn{display: inline-block;}
+
+}
+
+@media screen and (max-width: 600px)
+{
+  .items {padding-right: 10px;}
+  .hero-text p {text-align: end;}
+  .hero-text .medium {display: none;}
 }
