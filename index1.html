@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <script src="Script.js"></script>
+    <script src="https://kit.fontawesome.com/bdd16b42aa.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzes</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="side" id="mySide">
+            <div class="top">
+                <h1 id="logo">Muzes</h1>
+                <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i></a>
+            </div>
+            
+            <div class="sideNav">
+                <div class="option">
+                    <input type="radio" name="nav" id="option1" checked>
+                    <label for="option1">
+                        <i class="fa-solid fa-house fa-lg" style="color: #ffffff;"></i>
+                        <span>Home</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="nav" id="option2">
+                    <label for="option2">
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #ffffff;"></i>
+                        <span>Search</span>
+                    </label>
+                </div>
+                <div class="option">
+                    <input type="radio" name="nav" id="option3">
+                    <label for="option3">
+                        <i class="fa-solid fa-lines-leaning fa-flip-horizontal fa-lg" style="color: #ffffff;"></i>
+                        <span id="lib">Library</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="playlists">
+                    <p class="sidebarHeadings">Playlist</p>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-square-plus fa-lg" style="color: #ffffff;"></i>
+                            <a href="#"> Create Playlist</a>
+                        </li>
+                        <li>
+                            <i class="fa-regular fa-heart fa-lg" style="color: #ffffff;"></i>
+                            <a href="#">Liked Songs</a>
+                        </li>
+                        <li>Arijit Singh Radio</li>
+                        <li>New York, London</li>
+                        <li>Your Top Songs 2023</li>
+                        <li>Romantic Mix</li>
+                        <li>Someone Your Loved</li>
+                        <li>New</p></li>
+                        <li>Old</p></li>
+                        <li>Work Playlist 2022 home to work</li>
+                        <li>Shower Playlist 2023</li>
+                    </ul>
+                </div>
+    
+                <div class="radios">
+                        <p class="sidebarHeadings">Radio</p>
+                        <ul>
+                        <li>
+                            <div class="radioImg"></div>
+                            <p>New York, New York</p>
+                        </li>
+                        <li>
+                            <div class="radioImg"></div>
+                            <p>Your Top Songs 2023</p>
+                        </li>
+                        <li>
+                            <div class="radioImg"></div>
+                            <p>Someone Your Loved</p>
+                        </li>
+                        <li>
+                            <div class="radioImg"></div>
+                            <p>New</p>
+                        </li>
+                        <li>
+                            <div class="radioImg"></div>
+                            <p>Old</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div>
+                <ul class="extra">
+                    <li><a href="#"><i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-language fa-lg" style="color: #ffffff;"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-download fa-lg" style="color: #ffffff;"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main" id="myMain">
+            <nav class="navBar">
+                <ul class="left">
+                 <li id="hamburger">
+                    <a href="javascript:void(0)" onclick="openNav()"><i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i></a>
+                 </li>
+                 <li><a href="#">New In</a></li>
+                 <li><a href="#">Trending</a></li>
+                 <li><a href="#">Recomended</a></li>
+                </ul>
+                <ul class="right">
+                 <li><input type="text" placeholder="Search"></li>
+                 <li><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg></li>
+                 <li><img src="profile.jpg" alt="Profile" id="profile"></li>
+                </ul>
+            </nav>
+            
+            <div class="hero">
+                <div class="slider">
+                    <div class="slides">
+                      <!--radio buttons start-->
+                      <input type="radio" name="radio-btn" id="radio1">
+                      <input type="radio" name="radio-btn" id="radio2">
+                      <input type="radio" name="radio-btn" id="radio3">
+                      <input type="radio" name="radio-btn" id="radio4">
+                      <!--radio buttons end-->
+                      <!--slide images start-->
+                      <div class="slide first">
+                        <div style="background-color: black;"></div>
+                      </div>
+                      <div class="slide">
+                        <div style="background-color: red;"></div>
+                      </div>
+                      <div class="slide">
+                        <div style="background-color: yellow;"></div>
+                      </div>
+                      <div class="slide">
+                        <div style="background-color: green;"></div>
+                      </div>
+                      <!-- slide images end-->
+                      <!--automatic navigation start-->
+                      <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                      </div> 
+                      <!--automatic navigation end -->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                      <label for="radio1" class="manual-btn"></label>
+                      <label for="radio2" class="manual-btn"></label>
+                      <label for="radio3" class="manual-btn"></label>
+                      <label for="radio4" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Good Morning</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>      
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+            
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <h2 style="padding:20px;">Best New Songs</h2>
+            <div class="Top20">
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container" id="last">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container" id="last">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container" id="last">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container" id="last">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="song-container" id="last">
+                    <div class="songs">
+                        <div class="songimg"></div>
+                        <div class="name">
+                            <p>Title</p>
+                            <p>Description</p>
+                        </div>
+                        <i class="fa-solid fa-ellipsis" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <div class="goodMorning">
+                <div class="heading">
+                    <h2>Recently Played</h2>
+                    <p>See More</p>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                    <div class="card last">
+                        <div class="img"></div>
+                        <p>Text</p>
+                    </div>
+                </div>
+                   
+            </div>
+
+            <footer>
+                <p>Copyright &copy; <span id="year">2023</span> Muzes Inc. All rights are reserved.</p>
+                <div class="foot">
+                    <span>Internet Service Terms</span>
+                    <span>Muzes Music & Privacy</span>
+                    <span>Cookies Warning</span>
+                    <span>Support</span>
+                    <span>Feedback</span>
+                </div>
+            </footer>
+            <div class="dummy"></div>
+            <div class="player">
+                <div class="player-container">
+                        <div class="playerImg"></div>
+                        <div class="playertitle"> <p>Title</p><p>Description</p></div>
+                        <div class="shuffle"><i class="fa-solid fa-shuffle fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="prev"><i class="fa-solid fa-backward-step fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="pause"><i class="fa-solid fa-pause fa-lg" style="color: #ffffff;"></i></div>
+                        <div class="next"><i class="fa-solid fa-backward-step fa-rotate-180 fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="repeat"><i class="fa-solid fa-repeat fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="timer">00:00 / 00:00</div>
+                        <div class="playback"> <span id="bar"></span> <span id="bar-c"></span> <span id="dot"></span></div>
+                        <div class="like"><i class="fa-regular fa-heart fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="queue"><i class="fa-solid fa-list fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="vol"><i class="fa-solid fa-volume-high fa-xs" style="color: #ffffff;"></i></div>
+                        <div class="full"><i class="fa-solid fa-up-right-and-down-left-from-center fa-rotate-90 fa-xs" style="color: #ffffff;"></i></div>
+                </div>              
+            </div>
+        </div>
+    </div>
+</body>
+</html>
