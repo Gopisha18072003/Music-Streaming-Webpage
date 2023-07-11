@@ -279,7 +279,7 @@ input[type=text]:focus {
 }
 #hamburger {
   padding-top: 10px;
-  padding-right: 20px;
+  padding-right: 10px;
   display: none;
 }
 .lists li p {
@@ -525,16 +525,17 @@ footer>p{
   flex: 20%;
 }
 .player-container #item2 {
-  flex: 10%;
+  flex: 15%;
 }
 .player-container #item2 div:not(:last-child){
   margin-right: 8px;
 }
 .player-container #item3 {
-  flex: 60%;
+  flex: 50%;
+  margin-left: 10px;
 }
 .player-container #item4 {
-  flex: 10%;
+  flex: 15%;
 }
 .player-container div{
   display: flex;
@@ -572,8 +573,10 @@ footer>p{
 }
 .playback {
   position: relative;
+  margin-right: 10px;
 }
 #item3 .timer {
+  flex: 20%;
   font-size : 1vw;
 }
 .playback #bar {
@@ -671,7 +674,7 @@ footer>p{
 
 }
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 660px)
 {
   .items {padding-right: 10px;}
   .hero-text p {text-align: end;}
@@ -680,4 +683,16 @@ footer>p{
     display: none;
   }
   #item3 {display: none;}
+  #item4 .vol {display: none;}
+  #item2 {margin-right: 34px;}
+}
+
+@media screen and (max-width: 380px) {
+  .main .navBar .left #hamburger {
+    margin-right: 5px;
+  }
+  .navBar .left li {
+    padding-left: 2px;
+    padding-right: 2px;
+}
 }
