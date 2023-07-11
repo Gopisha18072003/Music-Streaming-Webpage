@@ -212,7 +212,7 @@ body {
   border-radius: 3vw;
 }
 #searchBar .medium {
-  font-size: 1vw;
+  font-size: 1.2vw;
 }
 #searchBar i{
   padding-left: 0.2vw;
@@ -221,7 +221,7 @@ body {
 input[type=text] {
   background-color: transparent;
   border: none;
-  font-size: 14px;
+  font-size: 1.5vw;
 }
 input[type=text]:focus {
     outline: none;
@@ -632,6 +632,7 @@ footer>p{
   .items {padding-right: 10px;}
   .hero-text p {text-align: end;}
   .hero-text .medium {display: none;}
-  input[type=text] {background-size: 2vw 2vw;}
-  
+  #searchBar {
+    display: none;
+  }
 }
