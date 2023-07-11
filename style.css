@@ -30,7 +30,7 @@ body {
     
 }
 .side:not(#logo) {
-  font-size: 1vw;
+  font-size: 14px;
 }
 .main {
     flex: 85%;
@@ -69,7 +69,7 @@ body {
 .left li a {
     text-decoration: none;
     color: white;
-    font-size:  1.2vw;
+    font-size:  14px;
 }
 .hero{
     margin: 0;
@@ -266,7 +266,7 @@ input[type=text]:focus {
 
 #logo {
     color: white;
-    font-size: 2.5vw;
+    font-size: 32px;
     padding-top: 10px;
     padding-left: 20px;
 }
@@ -513,7 +513,7 @@ footer>p{
 }
 .playertitle {
   width: 6vw;
-  font-size: 1vw;
+  font-size: 14px;
 }
 
 .playback {
@@ -589,18 +589,18 @@ footer>p{
 
 .hero-text .small {
   color:#8876a8;
-  font-size: 1vw;
+  font-size: 12px;
   padding-bottom: 10px;
 }
 
 .hero-text .big {
   color: white;
-  font-size: 3vw;
+  font-size: 32px;
   font-weight: bolder;
 }
 .hero-text .medium {
   color:#302445;
-  font-size:1.5vw;
+  font-size:16px;
 }
 
 @media screen and (max-width: 950px) {
