@@ -546,6 +546,8 @@ footer>p{
 .playerImg {
   height: 3vw;
   width: 3vw;
+  min-width: 30px;
+  min-height: 30px;
   background-color: #23E3C9;
   border-radius: 50%;
 }
@@ -553,14 +555,14 @@ footer>p{
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin-left: 4px;
+  margin-left: 8px;
 }
 .player-container #item1 .playertext p:last-child {
-  font-size: 0.8vw;
+  font-size: 10px;
   
 }
 .player-container #item1 .playertext p:first-child {
-  font-size: 1.2vw;
+  font-size: 16px;
   font-weight: bold;
   
 }
@@ -588,7 +590,7 @@ footer>p{
   border-radius: 10px;
 }
 
-.player-container #item4 div{
+.player-container #item4 div:not(:last-child){
   padding-right: 8px;
 }
 
@@ -677,4 +679,5 @@ footer>p{
   #searchBar {
     display: none;
   }
+  #item3 {display: none;}
 }
