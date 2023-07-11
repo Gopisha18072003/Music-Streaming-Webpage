@@ -221,6 +221,7 @@ body {
 input[type=text] {
   background-color: transparent;
   border: none;
+  font-size: 14px;
 }
 input[type=text]:focus {
     outline: none;
