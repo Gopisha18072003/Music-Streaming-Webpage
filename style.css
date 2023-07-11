@@ -418,31 +418,34 @@ input[type=text]:focus {
   height: 250px;
   overflow-y: auto;
   display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
   padding: 20px;
 }
 .Top20::-webkit-scrollbar {
   display: none;
 }
-.Top20 .song-container:not(#last) {
-  width: 24%;
+.Top20 .song-container {
+  width: 23.8%;
   height: 70px;
   border-top: 2px solid black;
-  padding-top: 5px;
-  margin-right: 12px;
-}
-.Top20 #last {
-  width: 24%;
-  height: 70px;
-  border-top: 2px solid black;
-  padding-top: 5px;
+  padding-top: 10px;
+  border-radius: 1.5px;
 }
 
-.Top20 .song-container .songs {
+
+.songs{
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  justify-content: space-between;
 }
+.Top20 .song-container .songs .songleft{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .Top20 .song-container .songs .songimg {
   height: 4vw;
   width: 4vw;
@@ -450,8 +453,15 @@ input[type=text]:focus {
   border-radius: 50%;
 }
 
-.Top20 .song-container .songs .name {
-  margin-left: 1vw;
+.Top20 .song-container .songs .name p:not(:last-child){
+  margin-left: 2px;
+  font-size: 1.2vw;
+
+}
+.Top20 .song-container .songs .name p:last-child{
+  margin-left: 2px;
+  font-size: 0.8vw;
+
 }
 .Top20 .song-container .songs i {
   margin-left: 3vw;
@@ -497,20 +507,41 @@ footer>p{
 .player {
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 85vw;
   height: 60px;
   background-color: #5e6a7d;
-  padding: 10px 20px;
+  padding: 5px;
 }
 
 .player-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
+  justify-content:space-between;
+  padding: 5px;
+  overflow: hidden;
 }
-.player-container div {
-  margin-right: 17px;
+.player-container #item1 {
+  flex: 20%;
+}
+.player-container #item2 {
+  flex: 10%;
+}
+.player-container #item2 div:not(:last-child){
+  margin-right: 8px;
+}
+.player-container #item3 {
+  flex: 60%;
+}
+.player-container #item4 {
+  flex: 10%;
+}
+.player-container div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  overflow: hidden;
 }
 .playerImg {
   height: 3vw;
@@ -518,37 +549,47 @@ footer>p{
   background-color: #23E3C9;
   border-radius: 50%;
 }
-.playertitle {
-  width: 6vw;
-  font-size: 14px;
+.player-container #item1 .playertext {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-left: 4px;
+}
+.player-container #item1 .playertext p:last-child {
+  font-size: 0.8vw;
+  
+}
+.player-container #item1 .playertext p:first-child {
+  font-size: 1.2vw;
+  font-weight: bold;
+  
 }
 
+#item3 div:first-child {
+  margin-right: 8px;
+}
 .playback {
   position: relative;
 }
-#bar {
-  display: inline-block;
-  width: 40vw;
-  height: 3px;
-  background-color: black;
+#item3 .timer {
+  font-size : 1vw;
 }
-#bar-c {
-  width: 8vw;
-  height: 6px;
-  position: absolute;
-  left: 0;
-  top: 13px;
+.playback #bar {
   background-color: black;
+  width: 40vw;
+  height: 0.3vw;
+  border-radius: 6px;
+}
+.playback #bar-c {
+  position: absolute;
+  width: 4vw;
+  height: 0.6vw;
+  background-color: rgb(255, 0, 0);
   border-radius: 10px;
 }
-#dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: black;
-    position: absolute;
-    left: 7vw;
-    top: 10px;
+
+.player-container #item4 div{
+  padding-right: 8px;
 }
 
 .hero1 {
@@ -624,6 +665,7 @@ footer>p{
     transition: 0.5s;
   }
   .top #closebtn{display: inline-block;}
+  .player {width: 100vw}
 
 }
 
