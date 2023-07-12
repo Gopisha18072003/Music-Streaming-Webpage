@@ -819,9 +819,7 @@ background: linear-gradient(188deg, rgba(22,14,74,1) 29%, rgba(0,255,230,1) 95%)
   .hero-text .small {color: rgb(15, 0, 74);}
   .hero-text .medium {color: rgb(15, 0, 74);}
   .hero-text .big {color: rgb(15,0, 74);}
-  .card p {
-    font-size:12px;
-}
+  .card-container .card p {font-size: 6px;}
   
 }
 
