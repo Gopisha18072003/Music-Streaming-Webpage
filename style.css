@@ -811,9 +811,18 @@ background: linear-gradient(188deg, rgba(22,14,74,1) 29%, rgba(0,255,230,1) 95%)
   #searchBar {
     display: none;
   }
+  .navBar .left li {padding-left: 2px;}
   #item3 {display: none;}
   #item4 .vol {display: none;}
   #item2 {margin-right: 34px;}
+  #hamburger {padding-right: 2px;}
+  .hero-text .small {color: rgb(15, 0, 74);}
+  .hero-text .medium {color: rgb(15, 0, 74);}
+  .hero-text .big {color: rgb(15,0, 74);}
+  .card p {
+    font-size:12px;
+}
+  
 }
 
 @media screen and (max-width: 380px) {
