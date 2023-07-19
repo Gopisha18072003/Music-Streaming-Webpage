@@ -816,9 +816,9 @@ background: linear-gradient(188deg, rgba(22,14,74,1) 29%, rgba(0,255,230,1) 95%)
   #item4 .vol {display: none;}
   #item2 {margin-right: 34px;}
   #hamburger {padding-right: 2px;}
-  .hero-text .small {color: rgb(15, 0, 74);}
-  .hero-text .medium {color: rgb(15, 0, 74);}
-  .hero-text .big {color: rgb(15,0, 74);}
+  .hero-text .small {color: rgb(10, 0, 67); text-shadow: 1px 1px 2px white;}
+  .hero-text .medium {color: rgb(10, 0, 67); text-shadow: 1px 1px 2px white;}
+  .hero-text .big {color: rgb(10, 0, 67); text-shadow: 1px 1px 2px white;}
   .card-container .card p {font-size: 6px;}
   
 }
